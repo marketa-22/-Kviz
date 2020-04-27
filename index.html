@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>
+KVÍZ - Grametbauerová Markéta
+</title>
+<head>
+<meta charset="UTF-8">
+<script src="game.js"></script>
+<style>
+body {background-color: white;}
+</style>
+</head>
+
+<body onload="gameStart()">
+<h1 id="state" style="text-align:left">
+  Skóre: 0
+  <span style="float:right">
+      Životy: 3
+  </span>
+</h1>
+<center>
+<h1 id="questionNumber"></h1> <br>
+<h2 id="question"></h2> <br>
+<div id="gameButtons" style = "display:block">
+  <button id="optionA" type="button" onclick="chooseOption(0)"></button>
+  <button id="optionB" type="button" onclick="chooseOption(1)"></button>
+  <button id="optionC" type="button" onclick="chooseOption(2)"></button>
+  <button id="optionD" type="button" onclick="chooseOption(3)"></button>
+</div>
+<div id="playAgain" style = "display:none">
+  <button type="button" onclick="gameStart()">Hrát znovu</button>
+</div> <br>
+<iframe id="video" width="420" height="315"
+        style="display:none"
+        src="https://www.youtube.com/embed/hl9vHNLZXvA?autoplay=1">
+</iframe>
+</center>
+</body>
+</html>
